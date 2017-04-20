@@ -67,3 +67,9 @@ Create a migration
 ```
 php artisan make:migration create_posts_table --create=posts
 ```
+
+Create model and controller
+```
+php artisan make:model Post
+php artisan make:controller PostsController --resource
+```
