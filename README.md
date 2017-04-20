@@ -73,3 +73,8 @@ Create model and controller
 php artisan make:model Post
 php artisan make:controller PostsController --resource
 ```
+
+Verifying existing routes
+```
+php artisan route:list
+```
