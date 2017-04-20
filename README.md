@@ -16,11 +16,36 @@ If you don't have composer, please [follow these instructions](https://getcompos
 composer install
 ```
 
-3) Start your development server using **Artisan** command:
+3) Copy the file `env.example`:
+```
+cd /path/to/your/laravel/project/
+cp .env.example .env
+```
+
+3.1) Generate an application key:
+```
+php artisan key:generate
+```
+
+3.2) Configure a MySQL database, user and password. So, open the file `.env` you just copied and look for:
+```
+# Open the file with any text editor
+nano .env
+
+# Change your database configuration
+DB_CONNECTION=mysql
+DB_HOST=127.0.0.1
+DB_PORT=3306
+DB_DATABASE=homestead
+DB_USERNAME=homestead
+DB_PASSWORD=secret
+```
+
+4) Start your development server using **Artisan** command:
 ```
 cd /path/to/your/laravel/project/
 
 php artisan serve
 ```
 
-4) Open this address: `http://127.0.0.1:8000/` in your browser to see the Laravel App:
+5) Open this address: `http://127.0.0.1:8000/` in your browser to see the Laravel App:
