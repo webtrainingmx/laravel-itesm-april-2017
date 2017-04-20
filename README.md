@@ -48,4 +48,22 @@ cd /path/to/your/laravel/project/
 php artisan serve
 ```
 
-5) Open this address: `http://127.0.0.1:8000/` in your browser to see the Laravel App:
+5) Open this address: `http://127.0.0.1:8000/` in your browser to see the Laravel App.
+
+## Useful Laravel Commands
+
+Create scaffolding for auth
+```
+php artisan make:auth
+php artisan migrate
+```
+
+Run a development server:
+```
+php artisan serve
+```
+
+Create a migration
+```
+php artisan make:migration create_posts_table --create=posts
+```
